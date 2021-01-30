@@ -13,11 +13,9 @@ import java.util.List;
 
 public class CheckLastFive {
 
-    //Instance variables.
     private DataSource data;
     private List<Rate> rates;
 
-    //Constructor.
     public CheckLastFive(){
         System.out.println("Running check for rates from past five days...");
         data = DataSource.getInstance();
@@ -62,27 +60,4 @@ public class CheckLastFive {
         System.out.println("Attempting to create a table with date " + date + "...");
         data.addRatesTable(rates, date);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
